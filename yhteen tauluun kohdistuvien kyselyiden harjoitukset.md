@@ -5,4 +5,4 @@ select * from goal;
 
 # kysymys 2
 select name airport_type from airport where iso_country = "FI";
-![image](https://github.com/user-attachments/assets/e8a90033-df4c-439e-8c30-41385a3e6426 "select name airport_type from airport where iso_country = "FI";")
+![image](https://github.com/user-attachments/assets/e8a90033-df4c-439e-8c30-41385a3e6426)
