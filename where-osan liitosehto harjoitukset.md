@@ -24,3 +24,41 @@ where airport.iso_country = country.iso_country
 and country.continent = "AN";
 
 ![image](https://github.com/user-attachments/assets/e0a069ae-6ad6-4a40-b3a1-0390714c21c8)
+
+# kysymys 4
+select elevation_ft
+from airport, game
+where game.screen_name = "Heini"
+and airport.ident = game.location;
+
+
+![image](https://github.com/user-attachments/assets/e9854513-980a-430b-97e6-085517ea251a)
+
+# kysymys 5
+select (elevation_ft * 0.3048) as "elevation_m"
+from airport, game
+where game.screen_name = "Heini"
+and airport.ident = game.location;
+
+![image](https://github.com/user-attachments/assets/d7e441b6-df7b-4bbe-bc2a-3814296594cc)
+
+# kysymys 6
+select airport.name
+from airport, game
+where airport.ident = game.location
+and game.screen_name = "Ilkka";
+
+![image](https://github.com/user-attachments/assets/5588b515-74c3-4cbe-834e-ff32d167687b)
+
+# kysymys 7
+select country.name
+from country, airport, game
+where game.location = airport.ident
+and airport.iso_country = country.iso_country
+and game.screen_name = "Ilkka";
+
+![image](https://github.com/user-attachments/assets/0bb0f0d6-2bd6-44b5-9415-80e2c38c85a6)
+
+# kysymys 8
+
+
