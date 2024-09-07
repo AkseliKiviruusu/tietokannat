@@ -60,5 +60,31 @@ and game.screen_name = "Ilkka";
 ![image](https://github.com/user-attachments/assets/0bb0f0d6-2bd6-44b5-9415-80e2c38c85a6)
 
 # kysymys 8
+select name
+from goal, goal_reached, game
+where game.id = game_id
+and goal.id = goal_id
+and screen_name = "Heini";
 
+![image](https://github.com/user-attachments/assets/2c0fa8ab-3bbd-418b-8f87-4a7899647782)
 
+# kysymys 9
+select airport.name
+from airport, game, goal_reached, goal
+where airport.ident = game.location
+and game.id = game_id
+and goal.id = goal_id
+and screen_name = "Ilkka";
+
+![image](https://github.com/user-attachments/assets/2715262d-1cbd-4bee-b3d9-d4277b8e51b9)
+
+# kysymys 10
+select country.name
+from airport, game, goal_reached, goal, country
+where airport.ident = game.location
+and game.id = game_id
+and goal.id = goal_id
+and country.iso_country = airport.iso_country
+and screen_name = "Ilkka";
+
+![image](https://github.com/user-attachments/assets/253b4886-1ef3-40e3-b0d9-6e44dfec8cbc)
