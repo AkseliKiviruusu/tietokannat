@@ -30,7 +30,8 @@ where airport.name like "%hels%";
 
 ![image](https://github.com/user-attachments/assets/b4ab566a-da9d-469f-a938-b7dc7c4d9f80)
 
-# kysymys 5select goal.name, screen_name
+# kysymys 5
+select goal.name, screen_name
 from goal
 left join goal_reached on goal.id = goal_id
 left join game on game.id = game_id;
